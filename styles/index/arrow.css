@@ -1,0 +1,49 @@
+.arrow-body {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0, 120%);
+    transition: all 0.3s ease 0s;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #d9bfbf;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.arrow-body._active {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.arrow {
+    position: relative;
+    display: block;
+    top: 8px;
+    left: 18px;
+    background-color: #f5efef;
+    width: 4px;
+    height: 24px;
+    border-radius: 20%;
+}
+
+.arrow::before,
+.arrow::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    background-color: #f5efef;
+    width: 4px;
+    height: 12px;
+    border-radius: 30%;
+    transform: rotate(45deg);
+}
+
+.arrow::after {
+    left: 5px;
+    transform: rotate(-45deg);
+}

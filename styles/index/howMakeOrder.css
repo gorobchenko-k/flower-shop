@@ -1,0 +1,70 @@
+.howMakeOrder {
+    margin: 10px 0;
+}
+
+.howMakeOrder__title {
+    margin: 20px 0;
+}
+
+.howMakeOrder__items {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.howMakeOrder__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    padding: 0 10px;
+}
+
+.howMakeOrder__img {
+    margin: 10px 0;
+    width: 100px;
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+}
+
+.howMakeOrder__text {
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.howMakeOrder__item._active .howMakeOrder__img{
+    transform: scale(1);
+}
+
+.howMakeOrder__item._active .howMakeOrder__text{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+/* --------------------------------- */
+
+@media (max-width: 967px) {
+    .howMakeOrder__items {
+        flex-wrap: wrap;
+    }
+
+    .howMakeOrder__item {
+        padding: 10px 10px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .howMakeOrder__items {
+        flex-wrap: wrap;
+    }
+
+    .howMakeOrder__item {
+        padding: 10px 0;
+        width: 100%;
+    }
+}

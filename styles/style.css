@@ -1,0 +1,121 @@
+/* обнуление */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+html,
+body {
+    height: 100%;
+    /* ширина между строками */
+    line-height: 1;
+    font-size: 14px;
+    color: #252B42;
+    font-weight: 500;
+    font-family: Montserrat;
+    background-color: #FFF;
+}
+
+/* ----------------- */
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    z-index: 8;
+}
+
+@media (max-width: 767px) {
+    .wrapper::before {
+        display: none;
+    }
+}
+
+._container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    box-sizing: content-box;
+}
+
+/* --------------------------------- */
+.text {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.title {
+    font-size: 22px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* --------------------------------- */
+.prev,
+.next {
+    cursor: pointer;
+}
+
+.prev span::before,
+.prev span::after,
+.next span::before,
+.next span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+}
+
+.prev span::before {
+    transform: rotate(-45deg);
+}
+
+.prev span::after {
+    transform: rotate(45deg) translate(12px, 12px);
+}
+
+.next span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.next span::after {
+    bottom: 0px;
+    transform: rotate(-45deg) translate(-12px, 12px);
+}
+
+/* ----------------------------- */

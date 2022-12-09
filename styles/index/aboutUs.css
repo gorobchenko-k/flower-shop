@@ -1,0 +1,45 @@
+.aboutUs {
+    background-color: #F5EFEF;
+    padding: 20px 0;
+}
+
+.aboutUs__container {
+    display: flex;
+    align-items: top;
+}
+
+.aboutUs__body {
+    flex-grow: 2;
+    /* flex-shrink: 1; */
+}
+
+.aboutUs__title {
+    text-align: left;
+}
+
+.aboutUs__text {
+    text-align: left;
+}
+
+.aboutUs__image {
+    flex-grow: 3;
+    /* flex-shrink: 2; */
+}
+
+.aboutUs__image img {
+    padding: 20px 10px;
+    width: 100%;
+}
+
+/* ----------------------------- */
+
+@media (max-width: 767px) {
+    .aboutUs__container {
+        flex-direction: column;
+    }
+
+    .aboutUs__image img {
+        padding: 20px 0;
+        width: 100%;
+    }
+}

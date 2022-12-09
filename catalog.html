@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooms</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/catalog/description.css">
+    <link rel="stylesheet" href="styles/catalog/filter.css">
+    <link rel="stylesheet" href="styles/catalog/catalog.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="catalog.html" class="menu__link">Каталог</a>
+                            </li>
+                            <li class="menu__logo">
+                                <a href="menu__link">
+                                    <img src="image/logo.png" alt="BLOOMS">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">О нас</a>
+                                <span class="menu__arrow"></span>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item">
+                                        <a href="index.html#aboutUs" class="menu__sub-link" data-goto="#aboutUs">О компании</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a href="index.html#reviews" class="menu__sub-link" data-goto="#reviews">Отзывы</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a href="index.html#contacts" class="menu__sub-link" data-goto="#contacts">Контакты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Кабинет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="description">
+            <h1 class="description__title title">НАШИ БУКЕТЫ</h1>
+            <p class="description__text text">Дополнительно к каждому букету Вы можете добавить открытку, написав любой
+                текст к заказу,который мы с удовольствием напишем на ней. <br>
+                Так же к Вашему заказу прилагается специальная памятка по уходу за цветами и кризалл. <br>
+                Передаётся букет во временной ёмкости с водой, так что у вас будет ещё около 10 часов, чтобы поставить
+                его в вазу.
+            </p>
+        </section>
+
+        <section class="filter">
+            <div class="filter__order order">
+                <h2 class="order__sub-title">Порядок:</h2>
+                <label class="order__label" for="order-default">
+                    <input class="order__value" type="radio" name="order__value" id="order-default" checked>
+                    по умолчанию</label>
+                <label class="order__label" for="order-asc">
+                    <input class="order__value" type="radio" name="order__value" id="order-asc">
+                    по возрастанию стоимости</label>
+                <label class="order__label" for="order-desc">
+                    <input class="order__value" type="radio" name="order__value" id="order-desc">
+                    по убыванию стоимости</label>
+
+                <label class="order__label" for="order-date">
+                    <input class="order__value" type="radio" name="order__value" id="order-date">
+                    сначала новые</label>
+            </div>
+            <div class="filter__presence">
+                <input class="filter__button" type="button" value="Розы">
+                <input class="filter__button" type="button" value="Пионы">
+                <input class="filter__button" type="button" value="Гортензии">
+                <input class="filter__button" type="button" value="Хризантемы">
+                <input class="filter__button" type="button" value="Мимозы">
+                <input class="filter__button" type="button" value="Сбросить">
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="catalog__products">
+                <div class="catalog__product">
+                    <img class="catalog__photo" src="photo/1.jpg" alt="Букет с гортензией">
+                    <h3 class="catalog__title">Пионовидные тюльпаны</h3>
+                    <p class="catalog__price">2000 p.</p>
+                    <input class="catalog__button" type="button" value="Заказать">
+                </div>
+
+                <div class="catalog__product">
+                    <img class="catalog__photo" src="photo/2.jpg" alt="Букет с гортензией">
+                    <h3 class="catalog__title">Букет с гортензией</h3>
+                    <p class="catalog__price">2000 p.</p>
+                    <input class="catalog__button" type="button" value="Заказать">
+                </div>
+
+                <div class="catalog__product">
+                    <img class="catalog__photo" src="photo/3.jpg" alt="Букет с гортензией">
+                    <h3 class="catalog__title">Букет с гиацинтом</h3>
+                    <p class="catalog__price">2000 p.</p>
+                    <input class="catalog__button" type="button" value="Заказать">
+                </div>
+
+                <div class="catalog__product">
+                    <img class="catalog__photo" src="photo/4.jpg" alt="Букет с гортензией">
+                    <h3 class="catalog__title">Букет с розами</h3>
+                    <p class="catalog__price">2000 p.</p>
+                    <input class="catalog__button" type="button" value="Заказать">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container _container">
+                <p class="footer__text">
+                    Телефон: +7(000)000-00-00 <br> Адрес: 190000, ул. Б.Морская, д.67
+                </p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
